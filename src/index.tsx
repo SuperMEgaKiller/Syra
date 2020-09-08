@@ -4,13 +4,6 @@ import ReactDOM from "react-dom";
 import App from "./components/App";
 
 import "./index.scss";
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
 // serviceWorker.unregister();
 
 const render = (Component: React.FC) => {
@@ -25,8 +18,8 @@ const render = (Component: React.FC) => {
 render(App);
 
 if (module.hot) {
-  module.hot.accept("./App", () => {
-    const NextApp = require("./App").default;
+  module.hot.accept("./components/App", () => {
+    const NextApp = require("./components/App").default;
     render(NextApp);
   });
 }

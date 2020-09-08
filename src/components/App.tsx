@@ -4,7 +4,7 @@ import TreeView from "./TreeView/TreeView";
 
 import "./App.scss";
 
-const TreeViewData = ["1", "2", "3"];
+const TreeViewData = ["1", "2", "3", "4"];
 // TODO: move layout to different components i guess
 // TODO: add async import
 function App() {
